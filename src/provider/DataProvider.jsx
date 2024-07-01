@@ -30,7 +30,7 @@ export const DataProvider = ({ children }) => {
   // Method to fetch data from server
 
   async function getData() {
-    const Url = "http://localhost:3001/data";
+    const Url = "https://my-json-server.typicode.com/miguelantonio96/api/data";
     const response = await fetch(Url);
     const data = await response.json();
     setData(data);
@@ -63,7 +63,7 @@ export const DataProvider = ({ children }) => {
     }
 
     try {
-      const response = await fetch("http://localhost:3001/data");
+      const response = await fetch("https://my-json-server.typicode.com/miguelantonio96/api/data");
       if (!response.ok) {
         throw new Error("Failed to fetch data");
       }
@@ -84,7 +84,7 @@ export const DataProvider = ({ children }) => {
           description: formData.description,
         });
 
-        await fetch(`http://localhost:3001/data/${categoryExist.id}`, {
+        await fetch(`https://my-json-server.typicode.com/miguelantonio96/api/data/${categoryExist.id}`, {
           method: "PATCH",
           headers: {
             "Content-Type": "application/json",
@@ -109,7 +109,7 @@ export const DataProvider = ({ children }) => {
           ],
         };
 
-        const response = await fetch("http://localhost:3001/data", {
+        const response = await fetch("https://my-json-server.typicode.com/miguelantonio96/api/data", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -137,7 +137,7 @@ export const DataProvider = ({ children }) => {
     // get movies from category
 
     try {
-      const response = await fetch(`http://localhost:3001/data/${categoryId}`);
+      const response = await fetch(`https://my-json-server.typicode.com/miguelantonio96/api/data/${categoryId}`);
 
       const category = await response.json();
 
@@ -149,13 +149,13 @@ export const DataProvider = ({ children }) => {
 
       // Delete category if there are no more movies in it
       if (updatedMovies.length === 0) {
-        await fetch(`http://localhost:3001/data/${categoryId}`, {
+        await fetch(`https://my-json-server.typicode.com/miguelantonio96/api/data/${categoryId}`, {
           method: "DELETE",
         }).then(() => {
           getData();
         });
       } else {
-        await fetch(`http://localhost:3001/data/${categoryId}`, {
+        await fetch(`https://my-json-server.typicode.com/miguelantonio96/api/data/${categoryId}`, {
           method: "PATCH",
           headers: {
             "Content-Type": "application/json",
@@ -176,7 +176,7 @@ export const DataProvider = ({ children }) => {
 
   const handleEditCategoryColor = async (categoryId, color) => {
     try {
-      await fetch(`http://localhost:3001/data/${categoryId}`, {
+      await fetch(`https://my-json-server.typicode.com/miguelantonio96/api/data/${categoryId}`, {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",
@@ -198,7 +198,7 @@ export const DataProvider = ({ children }) => {
     const categoryFiltered = data.filter((c) => c.category === currentCategory);
 
     try {
-      const response = await fetch("http://localhost:3001/data");
+      const response = await fetch("https://my-json-server.typicode.com/miguelantonio96/api/data");
       if (!response.ok) {
         throw new Error("Failed to fetch data");
       }
@@ -232,7 +232,7 @@ export const DataProvider = ({ children }) => {
           });
         }
 
-        await fetch(`http://localhost:3001/data/${categoryExist.id}`, {
+        await fetch(`https://my-json-server.typicode.com/miguelantonio96/api/data/${categoryExist.id}`, {
           method: "PATCH",
           headers: {
             "Content-Type": "application/json",
@@ -259,7 +259,7 @@ export const DataProvider = ({ children }) => {
             },
           ],
         };
-        await fetch("http://localhost:3001/data", {
+        await fetch("https://my-json-server.typicode.com/miguelantonio96/api/data", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -315,7 +315,7 @@ export const DataProvider = ({ children }) => {
 
   const optionData = data?.map((option) => {
     if (option.movies.length <= 0) {
-      fetch(`http://localhost:3001/data/${option.category}`, {
+      fetch(`https://my-json-server.typicode.com/miguelantonio96/api/data/${option.category}`, {
         method: "DELETE",
       }).then(() => {
         getData();

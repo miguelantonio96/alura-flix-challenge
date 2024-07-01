@@ -10,7 +10,7 @@ export const Video = () => {
 
   async function getMovie(movieId, categoryId) {
     const response = await fetch(
-      `http://localhost:3001/data/${categoryId}?movies_id=${movieId}`
+      `https://my-json-server.typicode.com/miguelantonio96/api/data/${categoryId}?movies_id=${movieId}`
     );
     const data = await response.json();
     const currentMovie = data.movies.find((m) => m.id === movieId);
