@@ -90,10 +90,14 @@ export default function NewVideoPage(props) {
           />
         </div>
       </form>
-      {VideoAddedSuccessfully && (
-        <div className="card-added-successfully">
-          New video has been added successfully!
-        </div>
+      {error ? (
+        <h1>Need to Fill the empty field</h1>
+      ) : (
+        VideoAddedSuccessfully && (
+          <div className="card-added-successfully">
+            New video has been added successfully!
+          </div>
+        )
       )}
     </section>
   );
