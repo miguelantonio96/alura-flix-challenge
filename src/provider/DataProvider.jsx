@@ -48,20 +48,12 @@ export const DataProvider = ({ children }) => {
 
   // Method to handle form submission
   const handleFormData = async (e) => {
-    e.preventDefault();
+    e?.preventDefault();
     setLoading(true);
-    SetVideoAddedSuccessfully(true);
-    setTimeout(() => {
-      SetVideoAddedSuccessfully(false);
-    }, 4000);
+   
+console.log('function called')
 
-
-    if (e.target.value === "") {
-      setError("Please fill all the fields");
-      
-      return;
-    }
-
+  
     try {
       const response = await fetch("https://my-json-server.typicode.com/miguelantonio96/api/data");
       if (!response.ok) {
@@ -124,6 +116,11 @@ export const DataProvider = ({ children }) => {
 
       // Update data after form submission
       getData();
+      SetVideoAddedSuccessfully(true);
+      setTimeout(() => {
+        SetVideoAddedSuccessfully(false);
+      }, 4000);
+
     } catch (error) {
       setError(error.message);
     } finally {

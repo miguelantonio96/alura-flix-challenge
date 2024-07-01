@@ -7,16 +7,12 @@ export default function Home({
   IsLoading,
   handleVideo,
   deleteVideoCard,
-  props
+  ...props
 }) {
-
-  
   const { categoryId } = useParams();
   const updatedMovies = categoryId
-  ? parentData.filter((category) => category.id === categoryId)
-  : parentData;
-  
-
+    ? parentData.filter((category) => category.id === categoryId)
+    : parentData;
 
   return (
     <section className="home-container">
@@ -24,8 +20,7 @@ export default function Home({
         <h1>Loading...</h1>
       ) : (
         <Content
-        {...props}
-       
+          {...props}
           data={updatedMovies}
           IsLoading={IsLoading}
           handleVideo={handleVideo}

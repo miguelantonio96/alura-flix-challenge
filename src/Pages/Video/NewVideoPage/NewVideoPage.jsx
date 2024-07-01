@@ -14,8 +14,7 @@ export default function NewVideoPage(props) {
     VideoAddedSuccessfully,
     error,
   } = props;
-  console.log({error})
- 
+
   return (
     <section className="main-new-video-container">
       <Title text="New Video" className="new-video-title" />
@@ -24,7 +23,7 @@ export default function NewVideoPage(props) {
         className="new-video-text"
       />
 
-      <form className="new-video-form">
+      <form className="new-video-form" onSubmit={handleFormData}>
         <Input
           required={true}
           className="input-add-videos"
@@ -43,7 +42,6 @@ export default function NewVideoPage(props) {
             selectOption="Select option"
             onChange={handleInputChange}
             options={options}
-            selected
           />
 
           <Input
@@ -83,12 +81,7 @@ export default function NewVideoPage(props) {
         />
 
         <div className="button-container">
-          <Button
-            className="button-save-form btn"
-            type="button"
-            text="Save"
-            onClick={handleFormData}
-          />
+          <Button className="button-save-form btn" type="submit" text="Save" />
           <Button
             className="button-cancel-form btn"
             type="reset"
@@ -97,14 +90,10 @@ export default function NewVideoPage(props) {
           />
         </div>
       </form>
-      {error ? (
-        <div>{error}</div>
-      ) : (
-        VideoAddedSuccessfully && (
-          <div className="card-added-successfully">
-            New video has been added successfully!
-          </div>
-        )
+      {VideoAddedSuccessfully && (
+        <div className="card-added-successfully">
+          New video has been added successfully!
+        </div>
       )}
     </section>
   );

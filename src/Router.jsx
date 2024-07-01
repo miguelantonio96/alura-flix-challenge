@@ -19,7 +19,7 @@ export default function Router(props) {
               isLoading={props.isLoading}
               handleVideo={props.handleVideo}
               deleteVideoCard={props.deleteVideoCard}
-              props={props}
+              {...props}
             />
           }
         />
@@ -31,18 +31,18 @@ export default function Router(props) {
               isLoading={props.isLoading}
               handleVideo={props.handleVideo}
               deleteVideoCard={props.deleteVideoCard}
-              props={props}
+              {...props}
             />
           }
         />
 
-        <Route path="/search" element={<SearchPage props={props} />} />
+        <Route path="/search" element={<SearchPage {...props} />} />
 
         <Route
           path="/new_video"
           element={
             <NewVideoPage
-            props={props}
+            {...props}
             />
           }
         />
