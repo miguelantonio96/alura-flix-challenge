@@ -1,0 +1,28 @@
+footer {
+  width: 100%;
+  height: 150px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  position: relative;
+  background-color: #262626;
+  flex-direction: column;
+  box-shadow: 0px 0px 6px 4px rgb(37 123 229);
+}
+
+footer img {
+  box-sizing: border-box;
+  height: 70px;
+  
+}
+
+.footer-text {
+  color: #007bff;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
+
+

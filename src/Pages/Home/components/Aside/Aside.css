@@ -1,0 +1,52 @@
+.aside-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #17477b;
+  width: 350px;
+  transition: all 0.3s ease-in-out;
+  /* padding: 10px; */
+}
+
+.aside-container ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  color: white;
+}
+
+.aside-container ul > li {
+  text-align: start;
+  width: 100%;
+  color: white;
+
+
+  margin: 25px 0;
+  font-size: 1.8rem;
+  font-weight: 600;
+  box-sizing: border-box;
+}
+
+.aside-container ul > li:hover {
+  background-color: rgba(255, 255, 255, 0.276);
+
+  transition: all 0.4s ease-in-out;
+}
+
+.aside-container a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  width: 100% !important;
+  padding: 10px 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.aside-container a:hover {
+  color: #fff;
+}
+
+.active-link {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.276);
+}

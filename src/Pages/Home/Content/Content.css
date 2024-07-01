@@ -1,0 +1,16 @@
+.content-container {
+  width: 100%;
+  display: flex;
+  z-index: -2;
+  flex-direction: column;
+  background-color: #262626;
+}
+
+.content {
+  position: relative;
+  box-sizing: border-box;
+  padding: 10px;
+  width: 100%;
+  flex-direction: column;
+  display: flex;
+}

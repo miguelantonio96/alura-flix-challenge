@@ -1,0 +1,90 @@
+{
+  "data": [
+    {
+      "category": "Thriller",
+      "color": "#5b4e24",
+      "id": "4bca1bb0-cf2d-4462-8cb9-47e06e1171ac",
+      "movies": [
+        {
+          "id": "e91c4893-2cd7-4d28-9683-adcad8bdbdb7",
+          "title": "A Quiet Place: Day One | Official Trailer 2",
+          "img": "https://m.media-amazon.com/images/M/MV5BNGZmODU3ZDEtMjQwZC00NTA5LThmNWYtYzk5MmY5ZmM4NGIxXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_.jpg",
+          "video": "https://www.youtube.com/embed/gjx-iHGXk9Q",
+          "description": ""
+        },
+        {
+          "id": "2c52465c-cd7d-4458-96ae-0475a51c9d11",
+          "title": "Damaged",
+          "img": "https://m.media-amazon.com/images/M/MV5BMjdmNjkyNGItMjY0ZC00NTExLTk5ZTEtODRmOTdiZmM3NDU4XkEyXkFqcGdeQXVyMTY3ODkyNDkz._V1_.jpg",
+          "video": "",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "category": "Action",
+      "color": "#9d0122",
+      "id": "2f10d8b8-9fbf-4306-8fa0-94872f662f80",
+      "movies": [
+        {
+          "id": "ebba1a26-6fb1-4e6e-b834-56af1614bfc7",
+          "title": "DEADPOOL & WOLVERINE Trailer (2024)",
+          "img": "https://cdn.marvel.com/content/1x/dp3_1sht_intl_digital_srgb_ka_blades_v2_resized.jpg",
+          "video": "https://www.youtube.com/embed/k8brhp_HTU4",
+          "description": ""
+        },
+        {
+          "id": "5dfe65bb-068a-48c6-a80e-7c9fa37f96e2",
+          "title": "My Spy The Eternal City - Official Trailer | Prime Video",
+          "img": "https://assets-prd.ignimgs.com/2024/06/12/my-spy-the-eternal-city-button-1718235899974.jpg",
+          "video": "https://www.youtube.com/embed/6xJ1F7yFsnU",
+          "description": ""
+        },
+        {
+          "id": "96fb1a7e-05e4-4587-b8de-e7fde4d2dd7b",
+          "title": "The Killer’s Game (2024) Official Trailer",
+          "img": "https://m.media-amazon.com/images/M/MV5BMWE1MGE5MTktMDhkZC00ZDIzLWEwMTYtNTJiN2JhODU4MjMxXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+          "video": "https://www.youtube.com/embed/ZHK6WghyWGY",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "category": "Adventure",
+      "color": "#d213d2",
+      "id": "a473084a-38b1-440d-994e-b0baa133b15b",
+      "movies": [
+        {
+          "id": "8fbc7855-eb57-4055-a2b5-38289d497a61",
+          "title": "The Wild Robot | Official Trailer 2",
+          "img": "https://m.media-amazon.com/images/M/MV5BNzg0OGUwM2UtOTJlNC00YjViLTgyN2QtNmQyYTE0NWNhZjA1XkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_FMjpg_UX1000_.jpg",
+          "video": "https://www.youtube.com/embed/njPNg0A9VpY",
+          "description": ""
+        },
+        {
+          "id": "3c7e722c-6b97-4fd3-9e78-989c140197e2",
+          "title": "Ultraman: Rising | Official Trailer | Netflix",
+          "img": "https://www.animationmagazine.net/wordpress/wp-content/uploads/Ultraman-Rising_EN-US_UMR_Teaser_Ultrafly_Vertical_27x40_sRGB_PRE.jpg",
+          "video": "https://www.youtube.com/embed/TwXgOMDONK8",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "category": "Sci-Fi",
+      "color": "#0cd43e",
+      "id": "007d3705-6cb2-4b50-ac8d-a096b2726160",
+      "movies": [
+        {
+          "id": "68d5b473-09bf-4710-8a4b-cddb5db78b19",
+          "title": "VENOM 3 - FIRST TRAILER",
+          "img": "https://m.media-amazon.com/images/M/MV5BYmIxMGNmOGYtMDQ4ZS00N2M0LWFiNWMtMWVlYjVkNzkzODc4XkEyXkFqcGc@._V1_.jpg",
+          "video": "https://www.youtube.com/embed/WWLmohqJBUI",
+          "description": "",
+          "category": "Sci-Fi",
+          "color": "#0cd43e"
+        }
+      ]
+    }
+  ]
+}

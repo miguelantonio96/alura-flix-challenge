@@ -1,0 +1,117 @@
+header {
+  z-index: 1;
+  width: 100%;
+  background-color: #262626;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 0px 6px 4px rgb(37 123 229);
+}
+.logo-and-search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header img {
+  height: 90px;
+  margin: 20px 30px;
+}
+
+.nav-bar-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px 30px;
+}
+.header-home-button {
+  width: 255px;
+  padding: 15px;
+  margin: 10px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  outline: none;
+  background-color: #272828;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  color: #007bff;
+  border: 2px solid #007bff;
+  box-shadow: inset 0px 0px 8px 2px #007bff;
+
+  &:hover {
+    color: #033c7a;
+    box-shadow: 0px 0px 8px 2px #007bff;
+  }
+}
+
+.favorite-header {
+  display: flex;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+
+  &:before {
+    content: "\2B50";
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+}
+.favorite-header:hover {
+  transition: all 0.3s ease-in-out;
+  text-shadow: 0px 0px 15px #f2cd3d;
+}
+
+.nav-bar-container > a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+.search-container {
+  width: 600px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  color: #007bff;
+  border-radius: 50px;
+  border: 2px solid #007bff;
+  background-color: #272828;
+  box-shadow: inset 0px 0px 8px 2px #007bff;
+}
+
+.search-container input {
+  width: 100%;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  box-shadow: none;
+  color: #ffffff;
+  padding: 20px;
+  font-size: 1.5rem;
+}
+
+.btn-magnify {
+ 
+  border: none;
+  border-radius: 20px;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn-magnify svg {
+  width: 30px;
+  height: 30px;
+  
+}
+
+.btn-magnify path {
+  fill: #ffffffbf;
+  transition: all 0.4s ease-in-out;
+}

@@ -1,0 +1,46 @@
+.section-search-container{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.section-item-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
+    gap: 20px; /* Gap between grid items */
+    /* Optional: Adjust width and center align */
+    max-width: 1200px; /* Maximum width of the grid container */
+    margin: 0 auto; /* Center align the grid container */
+    padding: 20px; /* Padding around the grid container */
+    justify-content: center;
+  }
+
+
+.no-result-title{
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.search-title{
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+  
+
+  .grid-item {
+    background-color: #f0f0f0; /* Background color of grid items */
+    padding: 20px; /* Padding inside grid items */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    /* Additional styling */
+  }

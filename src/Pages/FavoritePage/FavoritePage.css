@@ -1,0 +1,37 @@
+.favorite-title {
+  text-align: center;
+  width: 650px;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #000;
+  margin: 30px auto;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: rgb(252 213 63);
+  box-shadow: inset 0px 0px 8px 2px rgb(35 35 35 / 46%);
+}
+
+
+
+
+
+
+.favorite-container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.favorite-content {
+  display: flex;
+  width: 90%;
+  padding: 10px;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+h1 {
+  color: aliceblue;
+}
