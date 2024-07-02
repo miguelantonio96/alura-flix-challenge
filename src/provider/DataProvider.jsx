@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-
 import { v4 as uuidv4 } from "uuid";
 
 export const DataProvider = ({ children }) => {
@@ -38,8 +37,7 @@ export const DataProvider = ({ children }) => {
 
   // Method to handle form input changes
   const handleInputChange = (e) => {
-   
-
+  
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,

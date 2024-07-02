@@ -98,7 +98,7 @@ export const Card = ({
 
       <div className="card-body">
         <img className="card-img-top" src={data.img} alt="Card imagen" />
-        <p className="card-text">{data.description}</p>
+        
       </div>
 
       {canEdit && (

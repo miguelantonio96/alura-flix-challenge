@@ -1,15 +1,24 @@
-.video-container{
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
+.video-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
 }
 
 .video-iframe {
-    width: 1362px;
-    height: 950px;
+  width: 1362px;
+  height: 950px;
 }
 
-
+.video-title {
+  font-size: 30px;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  width: 650px;
+  padding: 15px 50px;
+}
