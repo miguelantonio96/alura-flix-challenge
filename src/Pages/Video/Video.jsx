@@ -8,6 +8,9 @@ export const Video = () => {
   const { categoryId, movieId } = useParams();
   const [movie, setMovie] = useState(null);
 
+  
+
+
   async function getMovie(movieId, categoryId) {
     const response = await fetch(
       `https://my-json-server.typicode.com/miguelantonio96/api/data/${categoryId}?movies_id=${movieId}`
@@ -23,11 +26,12 @@ export const Video = () => {
     getMovie(movieId, categoryId);
   }, [categoryId, movieId]);
 
+
+  
   return !movie ? (
     <Loading/>
   ) : (
     <div className="video-container">
-      <Title className="video-title">{movie.title}</Title>
       <iframe
         className="video-iframe"
         src={movie.video}
@@ -35,6 +39,7 @@ export const Video = () => {
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
       ></iframe>
+      <Title className="video-title" text={movie.description}/>
     </div>
   );
 };

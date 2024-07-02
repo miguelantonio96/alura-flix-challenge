@@ -4,7 +4,7 @@ import "./SearchPage.css";
 import { Card } from "../Home/Content/Category/Card/Card";
 import Title from "../../components/Title/Title";
 
-const SearchPage = ({ props }) => {
+const SearchPage = (props) => {
   const {
     searchValue,
     data,
@@ -13,6 +13,8 @@ const SearchPage = ({ props }) => {
     handleDeleteVideo,
     handlePlayVideo,
   } = props;
+  
+
 
   if (!searchValue)
     return <Title text="No Result" className="no-result-title" />;
@@ -38,12 +40,7 @@ const SearchPage = ({ props }) => {
             ?.map((data, index) => {
               return (
                 <div className="category-container" key={index}>
-                  {/* <Title
-                className="category-title"
-                text={data?.category}
-                color={data.color}
-                /> */}
-
+          
                   <div className="cards-container" key={index}>
                     <Card
                       canEdit={true}

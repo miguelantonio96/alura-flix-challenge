@@ -9,7 +9,6 @@ export const InputSearch = ({
   handleSearch,
   onChange,
   onKeyPress,
-  required,
   value,
 }) => {
   return (
@@ -21,7 +20,7 @@ export const InputSearch = ({
         placeholder={placeholder}
         onChange={onChange}
         value={value}
-        required={required}
+        
         onKeyDown={onKeyPress}
       />
 

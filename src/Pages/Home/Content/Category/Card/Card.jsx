@@ -16,10 +16,8 @@ export const Card = ({
   category,
   categoryId,
   deleteVideoCard,
-  canEdit
+  canEdit,
 }) => {
-
-  
   //----------------------------------------------------------------
   // Show Play Video card
   //----------------------------------------------------------------
@@ -53,7 +51,7 @@ export const Card = ({
   //----------------------------------------------------------------
   // Delete video card
   //----------------------------------------------------------------
-  
+
   //----------------------------------------------------------------
   // Return
   //----------------------------------------------------------------
@@ -76,10 +74,13 @@ export const Card = ({
 
           {deleteVideoCard && (
             <div className="close-container">
-              <RiCloseLargeLine onClick={() => deleteVideoCard(categoryId, id)} />
+              <RiCloseLargeLine
+                onClick={() => deleteVideoCard(categoryId, id)}
+              />
             </div>
           )}
 
+          <h3 className="title-card">{data.title}</h3>
           <div className="cover-card"></div>
         </>
       )}
@@ -88,14 +89,15 @@ export const Card = ({
         to="#"
         className="Favorite-icon"
         style={{ backgroundColor: color }}
-        onClick={() => AddFavorite({ movieId:id, category, data, color, categoryId, id })}
+        onClick={() =>
+          AddFavorite({ movieId: id, category, data, color, categoryId, id })
+        }
       >
         <img src={favoritesIcon} alt="Favorite icon" />
       </Link>
 
       <div className="card-body">
         <img className="card-img-top" src={data.img} alt="Card imagen" />
-        <h3>{data.title}</h3>
         <p className="card-text">{data.description}</p>
       </div>
 
