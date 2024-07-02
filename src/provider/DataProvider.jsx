@@ -29,7 +29,7 @@ export const DataProvider = ({ children }) => {
   // Method to fetch data from server
 
   async function getData() {
-    const Url = "https://my-json-server.typicode.com/miguelantonio96/api/data";
+    const Url = "https://my-json-server.typicode.com/miguelantonio96/alura-flix-challenge/data";
     const response = await fetch(Url);
     const data = await response.json();
     setData(data);
@@ -53,7 +53,7 @@ console.log('function called')
 
   
     try {
-      const response = await fetch("https://my-json-server.typicode.com/miguelantonio96/api/data");
+      const response = await fetch("https://my-json-server.typicode.com/miguelantonio96/alura-flix-challenge/data");
       if (!response.ok) {
         throw new Error("Failed to fetch data");
       }
@@ -74,7 +74,7 @@ console.log('function called')
           description: formData.description,
         });
 
-        await fetch(`https://my-json-server.typicode.com/miguelantonio96/api/data/${categoryExist.id}`, {
+        await fetch(`https://my-json-server.typicode.com/miguelantonio96/alura-flix-challenge/data/${categoryExist.id}`, {
           method: "PATCH",
           headers: {
             "Content-Type": "application/json",
@@ -99,7 +99,7 @@ console.log('function called')
           ],
         };
 
-        const response = await fetch("https://my-json-server.typicode.com/miguelantonio96/api/data", {
+        const response = await fetch("https://my-json-server.typicode.com/miguelantonio96/alura-flix-challenge/data", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -132,7 +132,7 @@ console.log('function called')
     // get movies from category
 
     try {
-      const response = await fetch(`https://my-json-server.typicode.com/miguelantonio96/api/data/${categoryId}`);
+      const response = await fetch(`https://my-json-server.typicode.com/miguelantonio96/alura-flix-challenge/data/${categoryId}`);
 
       const category = await response.json();
 
@@ -144,13 +144,13 @@ console.log('function called')
 
       // Delete category if there are no more movies in it
       if (updatedMovies.length === 0) {
-        await fetch(`https://my-json-server.typicode.com/miguelantonio96/api/data/${categoryId}`, {
+        await fetch(`https://my-json-server.typicode.com/miguelantonio96/alura-flix-challenge/data/${categoryId}`, {
           method: "DELETE",
         }).then(() => {
           getData();
         });
       } else {
-        await fetch(`https://my-json-server.typicode.com/miguelantonio96/api/data/${categoryId}`, {
+        await fetch(`https://my-json-server.typicode.com/miguelantonio96/alura-flix-challenge/data/${categoryId}`, {
           method: "PATCH",
           headers: {
             "Content-Type": "application/json",
@@ -171,7 +171,7 @@ console.log('function called')
 
   const handleEditCategoryColor = async (categoryId, color) => {
     try {
-      await fetch(`https://my-json-server.typicode.com/miguelantonio96/api/data/${categoryId}`, {
+      await fetch(`https://my-json-server.typicode.com/miguelantonio96/alura-flix-challenge/data/${categoryId}`, {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",
@@ -193,7 +193,7 @@ console.log('function called')
     const categoryFiltered = data.filter((c) => c.category === currentCategory);
 
     try {
-      const response = await fetch("https://my-json-server.typicode.com/miguelantonio96/api/data");
+      const response = await fetch("https://my-json-server.typicode.com/miguelantonio96/alura-flix-challenge/data");
       if (!response.ok) {
         throw new Error("Failed to fetch data");
       }
@@ -227,7 +227,7 @@ console.log('function called')
           });
         }
 
-        await fetch(`https://my-json-server.typicode.com/miguelantonio96/api/data/${categoryExist.id}`, {
+        await fetch(`https://my-json-server.typicode.com/miguelantonio96/alura-flix-challenge/data/${categoryExist.id}`, {
           method: "PATCH",
           headers: {
             "Content-Type": "application/json",
@@ -254,7 +254,7 @@ console.log('function called')
             },
           ],
         };
-        await fetch("https://my-json-server.typicode.com/miguelantonio96/api/data", {
+        await fetch("https://my-json-server.typicode.com/miguelantonio96/alura-flix-challenge/data", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -310,7 +310,7 @@ console.log('function called')
 
   const optionData = data?.map((option) => {
     if (option.movies.length <= 0) {
-      fetch(`https://my-json-server.typicode.com/miguelantonio96/api/data/${option.category}`, {
+      fetch(`https://my-json-server.typicode.com/miguelantonio96/alura-flix-challenge/data/${option.category}`, {
         method: "DELETE",
       }).then(() => {
         getData();

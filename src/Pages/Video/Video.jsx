@@ -10,7 +10,7 @@ export const Video = () => {
 
   async function getMovie(movieId, categoryId) {
     const response = await fetch(
-      `https://my-json-server.typicode.com/miguelantonio96/api/data/${categoryId}?movies_id=${movieId}`
+      `https://my-json-server.typicode.com/miguelantonio96/alura-flix-challenge/data/${categoryId}?movies_id=${movieId}`
     );
     const data = await response.json();
     const currentMovie = data.movies.find((m) => m.id === movieId);
